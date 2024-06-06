@@ -47,7 +47,7 @@ void hapus(queue*q){
     if (isEmpty(q)) {
         printf("Antrean kosong");
     } else {
-        printf("Menghapus: %d\n", q->item[q->front]); // Mengubah item menjadi data
+        printf("Menghapus: %d\n", q->item[q->front]);
         q->front = (q->front + 1) % maxqueue;
         --(q->count);
     }
